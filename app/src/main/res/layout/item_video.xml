@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:orientation="vertical"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	app:cardUseCompatPadding="true"
+	app:cardElevation="2dp"
+	app:cardCornerRadius="8dp"
+	android:background="#ffffff">
+
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:orientation="vertical"
+		android:id="@+id/lnVideo">
+
+		<ImageView
+			android:src="@android:drawable/ic_delete"
+			android:layout_width="match_parent"
+			android:layout_height="150dp"
+			android:scaleType="fitXY"
+			android:id="@+id/thumbVideo"/>
+
+		<TextView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:text="Hahajajajs gsjs s sgsjsns svsgh ahahah aavyanahahns sgajsvsgjsvaya s shansvsgs vsgs s sghs scshs sgajs agajs vagaba agyas s"
+			android:textStyle="bold"
+			android:padding="10dp"
+			android:gravity="center"
+			android:id="@+id/judulVideo"/>
+
+		<LinearLayout
+			android:orientation="horizontal"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_margin="10dp"
+			android:gravity="center"
+			android:id="@+id/lnTwoBtn"
+			android:visibility="gone">
+
+			<Button
+				android:layout_width="0dp"
+				android:layout_height="35dp"
+				android:text="Update"
+				android:textSize="9sp"
+				android:textStyle="normal"
+				android:background="@drawable/button"
+				android:stateListAnimator="@null"
+				android:id="@+id/btnUpdate"
+				android:textColor="#FFFFFF"
+				android:paddingTop="5dp"
+				android:paddingRight="5dp"
+				android:paddingBottom="5dp"
+				android:paddingLeft="5dp"
+				android:layout_marginRight="2.5dp"
+				android:layout_weight="1.0"/>
+
+			<Button
+				android:layout_width="0dp"
+				android:layout_height="35dp"
+				android:text="Delete"
+				android:textSize="9sp"
+				android:textStyle="normal"
+				android:background="@drawable/button"
+				android:stateListAnimator="@null"
+				android:id="@+id/btnDelete"
+				android:textColor="#FFFFFF"
+				android:paddingTop="5dp"
+				android:paddingRight="5dp"
+				android:paddingBottom="5dp"
+				android:paddingLeft="5dp"
+				android:layout_marginLeft="2.5dp"
+				android:layout_weight="1.0"/>
+
+		</LinearLayout>
+
+	</LinearLayout>
+
+</androidx.cardview.widget.CardView>
+

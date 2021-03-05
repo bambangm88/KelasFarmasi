@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:gravity="center">
+
+	<ScrollView
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content">
+
+		<LinearLayout
+
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:orientation="vertical"
+			android:gravity="center">
+
+			<TextView
+				android:layout_height="wrap_content"
+				android:layout_width="match_parent"
+				android:padding="10dp"
+				android:layout_marginLeft="10dp"
+				android:layout_marginRight="10dp"
+				android:id="@+id/preload"
+				android:gravity="center"
+				android:layout_marginTop="10dp"
+				android:visibility="gone"/>
+
+			<LinearLayout
+				android:visibility="gone"
+				android:orientation="vertical"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_margin="10dp"
+				android:id="@+id/lnLogin"
+				android:gravity="center">
+
+				<EditText
+					android:layout_width="match_parent"
+					android:ems="10"
+					android:layout_height="wrap_content"
+					android:textSize="14sp"
+					android:hint="Masukkan Email"
+					android:padding="10dp"
+					android:background="@drawable/input"
+					android:inputType="textEmailAddress"
+					android:id="@+id/emailLogin"/>
+
+				<EditText
+					android:layout_width="match_parent"
+					android:ems="10"
+					android:layout_height="wrap_content"
+					android:textSize="14sp"
+					android:hint="Masukkan Password"
+					android:padding="10dp"
+					android:background="@drawable/input"
+					android:layout_marginTop="10dp"
+					android:inputType="textPassword"
+					android:id="@+id/pwLogin"/>
+
+				<TextView
+					android:layout_marginTop="6dp"
+					android:layout_gravity="left"
+					android:layout_height="wrap_content"
+					android:layout_width="wrap_content"
+					android:textSize="11sp"
+					android:text="Forgot Password."
+					android:textColor="@color/colorAccent"
+					android:id="@+id/toReset"/>
+
+				<Button
+					android:layout_width="match_parent"
+					android:layout_height="40dp"
+					android:text="LOGIN"
+					android:textSize="10sp"
+					android:layout_margin="20dp"
+					android:background="@drawable/button"
+					android:stateListAnimator="@null"
+					android:textColor="#FCFCFC"
+					android:id="@+id/btnLogin"/>
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="Belum Punya Akun? Daftar Sekarang."
+					android:layout_gravity="center"
+					android:textSize="11sp"
+					android:textColor="@color/colorAccent"
+					android:textStyle="bold"
+					android:id="@+id/toDaftar"/>
+
+			</LinearLayout>
+
+			<LinearLayout
+				android:orientation="vertical"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_margin="10dp"
+				android:id="@+id/lnReset"
+				android:gravity="center"
+				android:visibility="gone">
+
+				<EditText
+					android:layout_width="match_parent"
+					android:ems="10"
+					android:layout_height="wrap_content"
+					android:textSize="14sp"
+					android:hint="Masukkan Email"
+					android:padding="10dp"
+					android:background="@drawable/input"
+					android:inputType="textEmailAddress"
+					android:id="@+id/emailReset"/>
+
+				<Button
+					android:layout_width="match_parent"
+					android:layout_height="40dp"
+					android:text="RESET PASSWORD"
+					android:textSize="10sp"
+					android:layout_margin="20dp"
+					android:background="@drawable/button"
+					android:stateListAnimator="@null"
+					android:textColor="#FCFCFC"
+					android:id="@+id/btnReset"/>
+
+				<TextView
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:text="Kembali Login."
+					android:layout_gravity="center"
+					android:textSize="11sp"
+					android:textColor="@color/colorAccent"
+					android:textStyle="bold"
+					android:id="@+id/resetLogin"/>
+
+			</LinearLayout>
+
+			<LinearLayout
+				android:orientation="vertical"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_margin="10dp"
+				android:id="@+id/lnDaftar"
+
+				android:gravity="center">
+
+				<EditText
+					android:layout_width="match_parent"
+					android:ems="10"
+					android:layout_height="wrap_content"
+					android:textSize="14sp"
+					android:hint="Nama Lengkap"
+					android:padding="10dp"
+					android:background="@drawable/input"
+					android:id="@+id/namaDaftar"/>
+
+				<Spinner
+					android:layout_marginTop="10dp"
+					android:layout_height="wrap_content"
+					android:layout_width="match_parent"
+					android:id="@+id/kelaminDaftar"
+					android:entries="@array/kelamin"
+					android:background="@drawable/input"
+					android:padding="10dp"/>
+
+				<EditText
+					android:layout_width="match_parent"
+					android:ems="10"
+					android:layout_height="wrap_content"
+					android:textSize="14sp"
+					android:hint="Tanggal Lahir"
+					android:padding="10dp"
+					android:background="@drawable/input"
+					android:layout_marginTop="10dp"
+					android:id="@+id/tglDaftar"
+					android:editable="false"
+					android:focusable="false"
+					android:clickable="false"
+					android:focusableInTouchMode="false"/>
+
+				<EditText
+					android:layout_width="match_parent"
+					android:ems="10"
+					android:layout_height="wrap_content"
+					android:textSize="14sp"
+					android:hint="E-mail"
+					android:padding="10dp"
+					android:background="@drawable/input"
+					android:inputType="textEmailAddress"
+					android:layout_marginTop="10dp"
+					android:id="@+id/emailDaftar"/>
+
+				<EditText
+					android:layout_width="match_parent"
+					android:ems="10"
+					android:layout_height="wrap_content"
+					android:textSize="14sp"
+					android:hint="No Handphone"
+					android:padding="10dp"
+					android:background="@drawable/input"
+					android:inputType="number"
+					android:layout_marginTop="10dp"
+					android:id="@+id/hpDaftar"/>
+
+				<Spinner
+					android:layout_marginTop="10dp"
+					android:layout_height="wrap_content"
+					android:layout_width="match_parent"
+					android:id="@+id/univDaftar"
+					android:entries="@array/univ"
+					android:background="@drawable/input"
+					android:padding="10dp"/>
+
+				<Spinner
+					android:layout_marginTop="10dp"
+					android:layout_height="wrap_content"
+					android:layout_width="match_parent"
+					android:id="@+id/kotaDaftar"
+					android:entries="@array/kota"
+					android:background="@drawable/input"
+					android:padding="10dp"/>
+
+				<Spinner
+					android:layout_marginTop="10dp"
+					android:layout_height="wrap_content"
+					android:layout_width="match_parent"
+					android:id="@+id/programDaftar"
+					android:entries="@array/program"
+					android:background="@drawable/input"
+					android:padding="10dp"/>
+
+				<Spinner
+					android:layout_marginTop="10dp"
+					android:layout_height="wrap_content"
+					android:layout_width="match_parent"
+					android:id="@+id/kelasDaftar"
+					android:background="@drawable/input"
+					android:padding="10dp"
+					android:visibility="gone"/>
+
+				<Spinner
+					android:layout_marginTop="10dp"
+					android:layout_height="wrap_content"
+					android:layout_width="match_parent"
+					android:id="@+id/subKelasDaftar"
+					android:background="@drawable/input"
+					android:padding="10dp"
+					android:visibility="gone"/>
+
+				<Spinner
+					android:layout_marginTop="10dp"
+					android:layout_height="wrap_content"
+					android:layout_width="match_parent"
+					android:id="@+id/ukaiDaftar"
+					android:entries="@array/ukai"
+					android:background="@drawable/input"
+					android:padding="10dp"/>
+
+				<EditText
+					android:layout_width="match_parent"
+					android:ems="10"
+					android:layout_height="wrap_content"
+					android:textSize="14sp"
+					android:hint="Kode Promo"
+					android:padding="10dp"
+					android:background="@drawable/input"
+					android:inputType="text"
+					android:layout_marginTop="10dp"
+					android:id="@+id/kodePromo"/>
+
+				<EditText
+					android:layout_width="match_parent"
+					android:ems="10"
+					android:layout_height="wrap_content"
+					android:textSize="14sp"
+					android:hint="Masukkan Password"
+					android:padding="10dp"
+					android:background="@drawable/input"
+					android:layout_marginTop="10dp"
+					android:inputType="textPassword"
+					android:id="@+id/pwDaftar"/>
+
+
+
+
+				<EditText
+					android:layout_width="match_parent"
+					android:ems="10"
+					android:layout_height="wrap_content"
+					android:textSize="14sp"
+					android:hint="Masukkan Password"
+					android:padding="10dp"
+					android:background="@drawable/input"
+					android:layout_marginTop="10dp"
+					android:inputType="textPassword"
+					android:id="@+id/pw2Daftar"/>
+
+				<TextView
+					android:layout_height="wrap_content"
+					android:layout_width="wrap_content"
+					android:layout_gravity="right"
+					android:textSize="11sp"
+					android:textColor="#FF0F00"
+					android:text="Password Tidak Sama"
+					android:id="@+id/pwSalah"
+					android:visibility="gone"/>
+
+				<Button
+					android:layout_width="match_parent"
+					android:layout_height="40dp"
+					android:text="DAFTAR"
+					android:textSize="10sp"
+					android:layout_margin="20dp"
+					android:background="@drawable/button"
+					android:stateListAnimator="@null"
+					android:textColor="#FCFCFC"
+					android:id="@+id/btnDaftar"/>
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="Sudah Punya Akun? Login Sekarang."
+					android:layout_gravity="center"
+					android:textSize="11sp"
+					android:textColor="@color/colorAccent"
+					android:textStyle="bold"
+					android:id="@+id/toLogin"/>
+
+			</LinearLayout>
+
+		</LinearLayout>
+
+	</ScrollView>
+
+</LinearLayout>
+

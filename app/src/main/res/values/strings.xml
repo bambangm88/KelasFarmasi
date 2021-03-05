@@ -1,0 +1,208 @@
+<resources>
+    <string name="app_name">Kelas Farmasi</string>
+    <string name="base_url">https://kelasfarmasi.com/users/</string>
+    <!--<string name="base_url">http://localhost:8080/farmasi/</string>-->
+    <string-array name="kelamin">
+        <item>--Pilih Jenis Kelamin--</item>
+        <item>Laki-Laki</item>
+        <item>Perempuan</item>
+
+    </string-array>
+
+    <string-array name="bank">
+        <item>--Bank Penerima--</item>
+        <item>MANDIRI 1080012943867</item>
+        <item>BNI 0985149553</item>
+
+    </string-array>
+    <string-array name="univ">
+        <item>--Pilih Universitas--</item>
+        <item>Universitas Sumatera Utara</item>
+        <item>Universitas Tjut Nyak Dhien</item>
+        <item>Universitas Muslim Nusantara  Alwashliyah</item>
+        <item>Institut Kesehatan Deli Husada Deli Tua</item>
+        <item>Institut Kesehatan  Medistra Lubuk Pakam</item>
+        <item>Institut Teknologi Bandung</item>
+        <item>Institut Sains dan Teknologi Nasional</item>
+        <item>Sekolah Tinggi Farmasi Bandung</item>
+        <item>Sekolah Tinggi Farmasi Semarang</item>
+        <item>Sekolah Tinggi Farmasi Riau</item>
+        <item>Sekolah Tinggi Farmasi Cirebon</item>
+        <item>STFI Bandung</item>
+        <item>STIFI YP Padang</item>
+        <item>Universitas 17 Agustus 1945</item>
+        <item>Universitas Ahmad Dahlan</item>
+        <item>Universitas Airlangga</item>
+        <item>Universitas Andalas</item>
+        <item>Universitas Brawijaya</item>
+        <item>Universitas Gadjah Mada</item>
+        <item>Universitas Garut</item>
+        <item>Universitas Hasanudin</item>
+        <item>Universitas Indonesia</item>
+        <item>Universitas Islam Indonesia</item>
+        <item>Universitas Islam Negeri Syarif Hidayatullah</item>
+        <item>Universitas Islam Sultan Agung</item>
+        <item>Universitas Jember</item>
+        <item>Universitas Jendral Ahmad Yani</item>
+        <item>Universitas Jendral Sudirman</item>
+        <item>Universitas Pekalongan</item>
+        <item>Universitas Kristen Widya Mandala</item>
+        <item>Universitas Lambung Mangkurat</item>
+        <item>Universitas Muhammadiyah Malang</item>
+        <item>Universitas Muhammadiyah Purwokerto</item>
+        <item>Universitas Muhammadiyah Surakarta</item>
+        <item>Universitas Muhammadiyah Yogyakarta</item>
+        <item>Universitas Mulawarman</item>
+        <item>Universitas Muslim Indonesia</item>
+        <item>Universitas Padjadjaran</item>
+        <item>Universitas Pakuan</item>
+        <item>Universitas Pancasila</item>
+        <item>Universitas Prof. Hamka</item>
+        <item>Universitas Sanata Dharma</item>
+        <item>Universitas Setiabudi</item>
+        <item>Universitas Sriwijaya</item>
+        <item>Universitas Sumatera Utara</item>
+        <item>Universitas Surabaya</item>
+        <item>Universitas Udayana</item>
+        <item>Universitas Wahid Hasyim</item>
+        <item>Universitas Haluoleo Kendari</item>
+        <item>Universitas Tanjungpura</item>
+        <item>Lainya</item>
+    </string-array>
+    <string-array name="kota">
+        <item>--Pilih Kota--</item>
+        <item> Ambon </item>
+        <item> Balikpapan</item>
+        <item> Banda Aceh </item>
+        <item> Bandar Lampung </item>
+        <item> Bandung </item>
+        <item> Banjar </item>
+        <item> Banjarbaru </item>
+        <item> Banjarmasin</item>
+        <item> Batam </item>
+        <item> Batu </item>
+        <item> Bau-Bau</item>
+        <item>Bekasi</item>
+        <item>Bengkulu</item>
+        <item>Bima</item>
+        <item>Binjai</item>
+        <item>Bitung</item>
+        <item>Blitar</item>
+        <item>Bogor</item>
+        <item>Bontang</item>
+        <item>Bukittinggi</item>
+        <item>Cilegon</item>
+        <item>Cimahi</item>
+        <item>Cirebon</item>
+        <item>Denpasar</item>
+        <item>Depok</item>
+        <item>Dumai</item>
+        <item>Gorontalo</item>
+        <item>Jakarta</item>
+        <item>Jambi</item>
+        <item>Jayapura</item>
+        <item>Kediri</item>
+        <item>Kendari</item>
+        <item>Kotamobagu</item>
+        <item>Kupang</item>
+        <item>Langsa</item>
+        <item>Lhokseumawe</item>
+        <item>Lubuklinggau</item>
+        <item>Lubuk Pakam</item>
+        <item>Madiun</item>
+        <item>Magelang</item>
+        <item>Makassar</item>
+        <item>Malang</item>
+        <item>Manado</item>
+        <item>Mataram</item>
+        <item>Medan</item>
+        <item>Metro</item>
+        <item>Meulaboh</item>
+        <item>Mojokerto</item>
+        <item>Padang</item>
+        <item>Padang Sidempuan</item>
+        <item>Padangpanjang</item>
+        <item>Pagaralam</item>
+        <item>Palangkaraya</item>
+        <item>Palembang</item>
+        <item>Palopo</item>
+        <item>Palu</item>
+        <item>Pangkalpinang</item>
+        <item>Parepare</item>
+        <item>Pariaman</item>
+        <item>Pasuruan</item>
+        <item>Payakumbuh</item>
+        <item>Pekalongan</item>
+        <item>Pekanbaru</item>
+        <item>Pematangsiantar</item>
+        <item>Pontianak</item>
+        <item>Prabumulih</item>
+        <item>Probolinggo</item>
+        <item>Purwokerto</item>
+        <item>Sabang</item>
+        <item>Salatiga</item>
+        <item>Samarinda</item>
+        <item>Sawahlunto</item>
+        <item>Semarang</item>
+        <item>Serang</item>
+        <item>Sibolga</item>
+        <item>Singkawang</item>
+        <item>Solok</item>
+        <item>Sorong</item>
+        <item>Subulussalam</item>
+        <item>Sukabumi</item>
+        <item>Sungai Penuh</item>
+        <item>Surabaya</item>
+        <item>Surakarta</item>
+        <item>Tangerang</item>
+        <item>Tangerang Selatan</item>
+        <item>Tanjung Balai</item>
+        <item>Tanjung Pinang</item>
+        <item>Tarakan</item>
+        <item>Tasikmalaya</item>
+        <item>Tebing Tinggi</item>
+        <item>Tegal</item>
+        <item>Ternate</item>
+        <item>Tidore Kepulauan</item>
+        <item>Tomohon</item>
+        <item>Tual</item>
+        <item>Yogyakarta</item>
+    </string-array>
+    <string-array name="program">
+        <item>--Pilih Program Bimbingan--</item>
+        <item>BIMBEL UKAI</item>
+        <item>BIMBEL UKTTK</item>
+        <item>SEMINAR ONLINE</item>
+        <item>CPD ONLINE</item>
+    </string-array>
+    <string-array name="toUkai">
+        <item>KELAS TATAP MUKA UKAI</item>
+        <item>KELAS ONLINE UKAI</item>
+        <item>TRYOUT ONLINE UKAI</item>
+    </string-array>
+    <string-array name="toUkttk">
+        <item>KELAS TATAP MUKA UKTTK</item>
+        <item>KELAS ONLINE UKTTK</item>
+        <item>TRYOUT ONLINE UKTTK</item>
+    </string-array>
+    <string-array name="ukai">
+        <item>--Pernah Ikut UKAI ?--</item>
+        <item>Ya</item>
+        <item>Tidak</item>
+    </string-array>
+    <string-array name="kelasVideo">
+        <item>--Pilih Kategori Video--</item>
+        <item>KELAS TATAP MUKA UKAI</item>
+        <item>KELAS ONLINE UKAI</item>
+        <item>TRYOUT ONLINE UKAI</item>
+        <item>KELAS TATAP MUKA UKTTK</item>
+        <item>KELAS ONLINE UKTTK</item>
+        <item>TRYOUT ONLINE UKTTK</item>
+    </string-array>
+    <string-array name="kelasLes">
+        <item>--Pilih Kelas--</item>
+        <item>KELAS TATAP MUKA UKAI</item>
+        <item>KELAS ONLINE UKAI</item>
+        <item>TRYOUT SIMULASI UKAI CBT ONLINE</item>
+    </string-array>
+</resources>

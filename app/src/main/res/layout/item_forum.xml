@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:orientation="vertical"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	app:cardCornerRadius="6dp"
+	app:cardElevation="2dp"
+	app:cardBackgroundColor="@color/colorPrimary"
+	app:cardUseCompatPadding="true"
+	android:layout_marginLeft="10dp"
+	android:layout_marginRight="10dp">
+
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:orientation="vertical"
+		android:padding="10dp"
+		android:id="@+id/lnForum">
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="Lukman Hakim"
+			android:textStyle="bold"
+			android:id="@+id/namaForum"/>
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="1 Jam Yang Lalu"
+			android:layout_marginTop="2dp"
+			android:textSize="10sp"
+			android:id="@+id/jamForum"/>
+
+		<TextView
+			android:layout_marginTop="13dp"
+			android:textStyle="bold"
+			android:textSize="12sp"
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:text="#QUESTION"
+			android:textColor="@color/colorAccent"
+			android:id="@+id/typeForum"/>
+
+		<TextView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:text="gahansbgss sgsn sgsjs sgsgahaklaga s sgshahaggajaka acagayafabnaa gahsgsggssgsua ahakabaggaagaga ahanavaghahahahagahshw ahajavgajabaga gajagaa"
+			android:layout_marginTop="3dp"
+			android:textSize="13sp"
+			android:ellipsize="end"
+			android:maxLines="3"
+			android:id="@+id/askForum"/>
+
+		<LinearLayout
+			android:orientation="horizontal"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:gravity="center"
+			android:layout_gravity="right"
+			android:layout_marginTop="5dp">
+
+			<ImageView
+				android:src="@drawable/ic_komen"
+				android:layout_width="20dp"
+				android:layout_height="20dp"
+				android:layout_marginRight="3dp"/>
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="3 comments"
+				android:textSize="10sp"
+				android:gravity="center"
+				android:id="@+id/komenForum"/>
+
+		</LinearLayout>
+
+	</LinearLayout>
+
+</androidx.cardview.widget.CardView>
+

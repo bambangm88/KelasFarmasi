@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+
+	<include
+		layout="@layout/toolbar"
+		android:id="@+id/viewChatinclude1"/>
+
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_alignParentBottom="true"
+		android:id="@+id/viewChatRelativeLayout1">
+
+		<ImageView
+			android:src="@drawable/ic_send"
+			android:layout_width="45dp"
+			android:layout_height="45dp"
+			android:layout_alignParentRight="true"
+			android:layout_centerInParent="true"
+			android:id="@+id/sendChat"
+			android:layout_marginRight="7dp"/>
+
+		<EditText
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_toLeftOf="@+id/sendChat"
+			android:layout_centerInParent="true"
+			android:layout_margin="7dp"
+			android:textSize="14sp"
+			android:padding="10dp"
+			android:background="@drawable/input_form"
+			android:id="@+id/inputChat"
+			android:hint="write a message"/>
+
+	</RelativeLayout>
+
+	<androidx.recyclerview.widget.RecyclerView
+		android:layout_height="match_parent"
+		android:layout_width="match_parent"
+		android:id="@+id/rvViewChat"
+		android:layout_above="@+id/viewChatRelativeLayout1"
+		android:layout_below="@+id/viewChatinclude1"/>
+
+</RelativeLayout>
+

@@ -1,0 +1,405 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        layout="@layout/toolbar"
+        android:id="@+id/detailSubKelasinclude1"/>
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:padding="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:id="@+id/preload"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:visibility="gone"/>
+
+
+    <Button
+        android:layout_alignParentBottom="true"
+        android:id="@+id/hubungi"
+        android:layout_centerInParent="true"
+        android:layout_height="40dp"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_margin="10dp"
+        android:textSize="12sp"
+        android:textStyle="normal"
+        android:text="Hubungi Admin"
+        android:textColor="#FBFBFB"
+        android:background="@drawable/button"/>
+
+    <ScrollView
+        android:layout_below="@id/detailSubKelasinclude1"
+        android:layout_above="@id/hubungi"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="LAKUKAN TRANSFER KE REKENING"
+                android:paddingLeft="20dp"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:id="@+id/judul"
+                android:layout_marginTop="15dp"/>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:background="@android:color/white"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_bankrek"
+                    android:textColor="@android:color/black"
+                    android:textStyle="bold"
+                    android:textSize="18dp"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="20dp"
+                    android:text=""
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/tv_namarek"
+                    android:textStyle="bold"
+                    android:textSize="15dp"
+                    android:paddingLeft="20dp"
+                    android:text=""
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <RelativeLayout
+
+                    android:background="#f3f3f3"
+                    android:layout_margin="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp">
+
+                    <TextView
+                        android:id="@+id/tv_norek"
+                        android:layout_marginLeft="10dp"
+                        android:layout_centerVertical="true"
+                        android:textColor="@android:color/black"
+                        android:textStyle="bold"
+                        android:textSize="21dp"
+                        android:text=""
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                    <Button
+                        android:id="@+id/btn_salin_rekening"
+                        android:textSize="13dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/button_border"
+                        android:text="SALIN"
+                        android:textColor="@color/colorAccent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp"/>
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:visibility="gone"
+                    android:id="@+id/view_rek_2"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tv_bankrek2"
+                        android:textColor="@android:color/black"
+                        android:textStyle="bold"
+                        android:textSize="18dp"
+                        android:paddingLeft="20dp"
+                        android:text="PT BANK MANDIRI"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:id="@+id/tv_namarek2"
+                        android:textStyle="bold"
+                        android:textSize="15dp"
+                        android:paddingLeft="20dp"
+                        android:text="a/n Bambang Maulana"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <RelativeLayout
+                        android:background="#f3f3f3"
+                        android:layout_margin="20dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp">
+
+                        <TextView
+                            android:id="@+id/tv_norek2"
+                            android:layout_marginLeft="10dp"
+                            android:layout_centerVertical="true"
+                            android:textColor="@android:color/black"
+                            android:textStyle="bold"
+                            android:textSize="21dp"
+                            android:text="900000066432222"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                        <Button
+                            android:id="@+id/btn_salin_rekening2"
+                            android:textSize="13dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_centerVertical="true"
+                            android:layout_alignParentRight="true"
+                            android:background="@drawable/button_border"
+                            android:text="SALIN"
+                            android:textColor="@color/colorAccent"
+                            android:layout_width="wrap_content"
+                            android:layout_height="35dp"/>
+
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+
+
+
+
+
+                <RelativeLayout
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_centerVertical="true"
+                        android:textColor="@android:color/black"
+                        android:textSize="14dp"
+                        android:text="Nominal Transfer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:id="@+id/tv_nominaltransfer"
+                        android:textStyle="bold"
+                        android:textSize="16dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:text="Rp 250.000"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:visibility="gone"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_centerVertical="true"
+                        android:textColor="@android:color/black"
+                        android:textSize="14dp"
+                        android:text="Kode Unik"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:id="@+id/tv_kodeunik"
+                        android:textStyle="bold"
+                        android:textSize="16dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:text="+Rp123"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_centerVertical="true"
+                        android:textColor="@android:color/black"
+                        android:textSize="14dp"
+                        android:text="Kode Voucher"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:id="@+id/tv_kodevoucher"
+                        android:textStyle="bold"
+                        android:textSize="16dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:text="VASTR123"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_centerVertical="true"
+                        android:textColor="@android:color/black"
+                        android:textSize="14dp"
+                        android:text="Diskon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:id="@+id/tv_diskon"
+                        android:textStyle="bold"
+                        android:textSize="16dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:text="-Rp 10.000"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_marginTop="10dp"
+                        android:layout_centerVertical="true"
+                        android:textColor="@android:color/black"
+                        android:textSize="16dp"
+                        android:textStyle="bold"
+                        android:text="Total Transfer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:background="#f3f3f3"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp">
+
+                    <TextView
+                        android:id="@+id/tv_total"
+                        android:layout_marginLeft="10dp"
+                        android:layout_centerVertical="true"
+                        android:textColor="@android:color/holo_red_dark"
+                        android:textStyle="bold"
+                        android:textSize="21dp"
+                        android:text="Rp 240.123"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                    <Button
+                        android:id="@+id/btn_salin_nominal"
+                        android:textSize="13dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/button_border"
+                        android:text="SALIN"
+                        android:textColor="@color/colorAccent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:background="#fef9e3"
+                    android:layout_margin="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp">
+
+                    <TextView
+                        android:layout_marginLeft="10dp"
+                        android:layout_centerVertical="true"
+                        android:textColor="@android:color/black"
+                        android:layout_margin="10dp"
+                        android:textStyle="bold"
+                        android:textSize="12dp"
+                        android:text="Pastikan nominal transfer TEPAT BERJUMLAH ANGKA DI ATAS (hingga 3 digit terakhir).
+Silahkan Kirim Bukti Pembayaran ke Admin Via Whatsapp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+
+                </RelativeLayout>
+
+
+
+            </LinearLayout>
+
+            <Button
+
+                android:id="@+id/uploadBukti"
+                android:layout_centerInParent="true"
+                android:layout_height="40dp"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="70dp"
+                android:layout_marginRight="70dp"
+                android:layout_marginTop="10dp"
+                android:textSize="12sp"
+                android:textStyle="normal"
+                android:text="Upload Bukti Pembayaran"
+                android:textColor="#FBFBFB"
+                android:background="@drawable/button"/>
+
+
+
+
+
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</RelativeLayout>
+

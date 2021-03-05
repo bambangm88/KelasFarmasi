@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+
+	<include
+		layout="@layout/toolbar"
+		android:id="@+id/detailSubKelasinclude1"/>
+
+	<Button
+		android:layout_alignParentBottom="true"
+		android:id="@+id/hubungi"
+		android:layout_centerInParent="true"
+		android:layout_height="40dp"
+		android:layout_width="match_parent"
+		android:layout_marginLeft="30dp"
+		android:layout_marginRight="30dp"
+		android:layout_margin="10dp"
+		android:textSize="12sp"
+		android:textStyle="normal"
+		android:text="Hubungi Admin"
+		android:textColor="#FBFBFB"
+		android:background="@drawable/button"/>
+
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:orientation="vertical"
+		android:layout_below="@id/detailSubKelasinclude1"
+		android:layout_above="@id/hubungi">
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="Kelas Manfaps"
+			android:layout_gravity="center"
+			android:textSize="15sp"
+			android:textStyle="bold"
+			android:textColor="#000000"
+			android:id="@+id/judul"
+			android:layout_marginTop="5dp"/>
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="Rp 50,000"
+			android:layout_gravity="center"
+			android:textStyle="bold"
+			android:textSize="13sp"
+			android:layout_marginTop="4dp"
+			android:id="@+id/harga"/>
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="Text"
+			android:layout_margin="5dp"
+			android:id="@+id/fasilitas"/>
+
+	</LinearLayout>
+
+</RelativeLayout>
+

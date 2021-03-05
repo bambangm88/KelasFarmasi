@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+
+    <include
+        layout="@layout/toolbar"
+        android:id="@+id/detailSubKelasinclude1"/>
+
+
+
+
+<LinearLayout
+    android:layout_marginTop="70dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+
+
+
+            <LinearLayout
+                android:background="@android:color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:padding="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:id="@+id/preload"
+                    android:gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:visibility="gone"/>
+
+
+
+                <Spinner
+                    android:layout_marginTop="30dp"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginRight="35dp"
+
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:id="@+id/bankPenerima"
+                    android:entries="@array/bank"
+                    android:background="@drawable/input"
+                    android:padding="10dp"/>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginTop="10dp"
+                    android:textSize="9dp"
+                    android:text="Nama Rekening Pengirim" />
+
+                <LinearLayout
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="5dp">
+
+
+                    <EditText
+                        android:id="@+id/et_nama_pengirim"
+                        android:inputType="text"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+
+                        android:hint="Jumlah Transfer"
+                        android:text=""
+                        android:textSize="13dp" />
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:textSize="9dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Jumlah Transfer" />
+
+                <LinearLayout
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="5dp">
+
+
+                    <EditText
+                        android:id="@+id/et_jumlah"
+                        android:inputType="number"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+
+                        android:hint="Jumlah Transfer"
+                        android:text=""
+                        android:textSize="13dp" />
+
+                </LinearLayout>
+
+
+
+                <TextView
+                    android:textSize="9dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Tanggal Transfer" />
+
+                <LinearLayout
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="5dp">
+
+
+                    <EditText
+                        android:id="@+id/et_trf"
+                        android:inputType="text"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                         android:layout_marginRight="10dp"
+                        android:focusable="false"
+                        android:layout_toRightOf="@+id/countrycode"
+
+                        android:hint="Tanggal Transfer"
+                        android:text=""
+
+                        android:textSize="13dp" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="170dp"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginRight="35dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/btn_id_card"
+                        android:orientation="vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+
+                            android:layout_gravity="center"
+                            android:src="@drawable/upload"
+                            android:id="@+id/iv_bukti_trf"
+                            android:layout_width="match_parent"
+                            android:layout_height="150dp"/>
+
+                        <TextView
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:textSize="9dp"
+                            android:textAlignment="center"
+                            android:text="Bukti Transfer"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+
+                    </LinearLayout>
+
+
+
+
+                </LinearLayout>
+
+
+
+
+
+
+
+
+            </LinearLayout>
+
+
+        </ScrollView>
+
+
+</LinearLayout>
+
+    <Button
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:padding="10dp"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/btn_simpan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#FBFBFB"
+        android:background="@drawable/button"
+        android:text="Simpan"
+
+        android:textStyle="bold" />
+
+
+
+
+</RelativeLayout>

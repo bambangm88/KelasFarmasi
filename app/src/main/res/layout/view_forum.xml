@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+
+	<include
+		layout="@layout/toolbar"
+		android:id="@+id/viewForuminclude1"/>
+
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_alignParentBottom="true"
+		android:id="@+id/viewForumRelativeLayout1"
+		android:background="#FFFFFF">
+
+		<ImageView
+			android:src="@drawable/ic_send"
+			android:layout_width="45dp"
+			android:layout_height="45dp"
+			android:layout_alignParentRight="true"
+			android:layout_centerInParent="true"
+			android:id="@+id/sendKomen"
+			android:layout_marginRight="7dp"/>
+
+		<EditText
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_toLeftOf="@id/sendKomen"
+			android:layout_centerInParent="true"
+			android:layout_margin="7dp"
+			android:textSize="14sp"
+			android:padding="10dp"
+			android:background="@drawable/input_form"
+			android:id="@+id/inputKomen"
+			android:hint="write a comment"/>
+
+	</RelativeLayout>
+
+	<ScrollView
+		android:layout_below="@+id/viewForuminclude1"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:layout_above="@id/viewForumRelativeLayout1">
+
+		<LinearLayout
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:orientation="vertical">
+
+			<LinearLayout
+				android:orientation="vertical"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:padding="10dp">
+
+				<LinearLayout
+					android:orientation="vertical"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginTop="13dp"
+					android:background="@drawable/bg_question">
+
+					<TextView
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:textSize="15sp"
+						android:gravity="center"
+						android:textStyle="bold"
+						android:background="@color/colorAccent"
+						android:textColor="#000000"
+						android:padding="5dp"
+						android:id="@+id/typeForum"/>
+
+					<TextView
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:text="Lukman Hakim"
+						android:textStyle="bold"
+						android:id="@+id/namaForum"
+						android:layout_marginRight="13dp"
+						android:layout_marginLeft="13dp"
+						android:layout_marginTop="13dp"/>
+
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="1 Jam Yang Lalu"
+						android:layout_marginTop="2dp"
+						android:textSize="10sp"
+						android:id="@+id/jamForum"
+						android:layout_marginLeft="13dp"/>
+
+					<TextView
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:text="Jika Memamg Dirimulah"
+						android:textSize="15sp"
+						android:id="@+id/askForum"
+						android:layout_margin="13dp"/>
+
+				</LinearLayout>
+
+				<LinearLayout
+					android:orientation="horizontal"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:gravity="center"
+					android:layout_gravity="right"
+					android:layout_marginTop="5dp">
+
+					<ImageView
+						android:src="@drawable/ic_komen"
+						android:layout_width="20dp"
+						android:layout_height="20dp"
+						android:layout_marginRight="3dp"/>
+
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="3 comments"
+						android:textSize="10sp"
+						android:gravity="center"
+						android:id="@+id/komenForum"/>
+
+				</LinearLayout>
+
+			</LinearLayout>
+
+			<View
+				android:background="@drawable/v_shadow"
+				android:layout_width="match_parent"
+				android:layout_height="2dp"/>
+
+			<androidx.recyclerview.widget.RecyclerView
+				android:layout_height="match_parent"
+				android:layout_width="match_parent"
+				android:id="@+id/komentarForum"/>
+
+		</LinearLayout>
+
+	</ScrollView>
+
+</RelativeLayout>
+

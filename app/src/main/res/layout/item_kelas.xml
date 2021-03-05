@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	app:cardCornerRadius="8dp"
+	app:cardElevation="2dp"
+	app:cardBackgroundColor="#FFFFFF"
+	app:cardUseCompatPadding="true"
+	android:layout_margin="5dp">
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="vertical"
+		android:padding="10dp"
+		android:background="#FFFFFF">
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textStyle="bold"
+			android:id="@+id/namaKelas"
+			android:gravity="center"
+			android:layout_centerHorizontal="true"
+			android:text="KELAS X"/>
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="15dp"
+			android:textSize="13sp"
+			android:id="@+id/deskKelas"
+			android:text="Kelas Bimbingan Intensif Tatap Muka dilaksanakan di Gedung. Anda akan diberikan bimbingan Secara Langsung oleh Mentor Terbaik kami. Anda akan mendapatkan pembelajaran Materi UKAI dan Soal UKAI sesuai dengan blueprint UKAI terbaru serta berbagai tips dan trik dalam menjawab soal ukai."
+			android:gravity="left"/>
+
+		<Button
+			android:layout_width="wrap_content"
+			android:layout_height="35dp"
+			android:text="Lihat Detail"
+			android:textSize="9sp"
+			android:textStyle="normal"
+			android:background="@drawable/button"
+			android:stateListAnimator="@null"
+			android:id="@+id/btnKelas"
+			android:textColor="#FFFFFF"
+			android:paddingTop="5dp"
+			android:paddingRight="10dp"
+			android:paddingBottom="5dp"
+			android:paddingLeft="10dp"
+			android:layout_marginTop="10dp"/>
+
+	</LinearLayout>
+
+</androidx.cardview.widget.CardView>
+

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:orientation="vertical">
+
+		<include
+			layout="@layout/toolbar"/>
+
+		<WebView
+			android:layout_height="200dp"
+			android:layout_width="match_parent"
+			android:id="@+id/video"/>
+
+		<RelativeLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="5dp">
+
+			<Button
+				android:layout_width="wrap_content"
+				android:layout_height="40dp"
+				android:text="Full Screen"
+				android:layout_alignParentRight="true"
+				android:id="@+id/playFull"
+				android:padding="10dp"
+				android:textSize="10sp"
+				android:textStyle="normal"
+				android:layout_marginLeft="5dp"
+				android:background="@drawable/button"
+				android:textColor="#FFFFFF"/>
+
+			<View
+				android:background="?android:attr/dividerVertical"
+				android:layout_width="match_parent"
+				android:layout_height="2dp"
+				android:layout_toLeftOf="@id/playFull"
+				android:layout_centerInParent="true"/>
+
+		</RelativeLayout>
+
+		<TextView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:text="Ujian Untuk Mantaps"
+			android:textAppearance="?android:attr/textAppearanceMedium"
+			android:textStyle="bold"
+			android:padding="5dp"
+			android:id="@+id/judul"
+			android:textColor="#000000"/>
+
+		<TextView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:text="hahaha"
+			android:layout_marginTop="20dp"
+			android:padding="5dp"
+			android:id="@+id/deskripsi"/>
+
+	</LinearLayout>
+
+</LinearLayout>
+

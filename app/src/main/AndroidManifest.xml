@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?><manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.kelasFarmasi">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".DetailPembayaran"></activity>
+        <activity android:name=".UploadSimpanan"    android:windowSoftInputMode="stateHidden|adjustResize"></activity>
+        <activity android:name=".MainActivity"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Auth" />
+        <activity android:name=".chat.ViewChat" />
+        <activity android:name=".forum.Forum" />
+        <activity android:name=".forum.ViewForum" />
+        <activity android:name=".ujian.MainUjian" />
+        <activity android:name=".ujian.ViewUjian" />
+        <activity android:name=".ujian.DetailUjian" />
+        <activity android:name=".video.Video" />
+        <activity android:name=".video.AddVideo" />
+        <activity android:name=".video.PlayVideo" />
+        <activity android:name=".video.FullScreenVideo" />
+        <activity android:name=".kelas.Kelas" />
+        <activity android:name=".kelas.AddSub" />
+        <activity android:name=".kelas.SubKelas" />
+        <activity android:name=".kelas.DetailSubKelas" />
+    </application>
+
+</manifest>

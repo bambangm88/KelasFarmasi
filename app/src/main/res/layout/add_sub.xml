@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+
+	<include
+		layout="@layout/toolbar"/>
+
+	<ScrollView
+		android:layout_width="match_parent"
+		android:layout_height="match_parent">
+
+		<LinearLayout
+			android:layout_height="match_parent"
+			android:layout_width="match_parent"
+			android:orientation="vertical">
+
+			<LinearLayout
+				android:layout_width="fill_parent"
+				android:layout_height="fill_parent"
+				android:orientation="vertical"
+				android:padding="8dp">
+
+				<EditText
+					android:layout_width="match_parent"
+					android:ems="10"
+					android:layout_height="wrap_content"
+					android:id="@+id/judulSub"
+					android:hint="Input Title"
+					android:textSize="14sp"
+					android:padding="10dp"
+					android:background="@drawable/input"/>
+
+				<Spinner
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:id="@+id/ktgSub"
+					android:padding="10dp"
+					android:background="@drawable/input"
+					android:layout_marginTop="8dp"
+					android:entries="@array/kelasLes"/>
+
+				<EditText
+					android:layout_width="match_parent"
+					android:ems="10"
+					android:layout_height="wrap_content"
+					android:layout_marginTop="8dp"
+					android:id="@+id/hargaSub"
+					android:padding="10dp"
+					android:textSize="14sp"
+					android:hint="Input Harga"
+					android:background="@drawable/input"/>
+
+				<EditText
+					android:layout_width="match_parent"
+					android:ems="10"
+					android:layout_height="wrap_content"
+					android:layout_marginTop="8dp"
+					android:gravity="top"
+					android:id="@+id/fasilitasSub"
+					android:hint="Input Fasilitas"
+					android:textSize="14sp"
+					android:padding="10dp"
+					android:background="@drawable/input"/>
+
+				<Button
+					android:layout_width="match_parent"
+					android:layout_height="35dp"
+					android:text="Tambah SubKelas"
+					android:padding="10dp"
+					android:textSize="10sp"
+					android:background="@drawable/button"
+					android:textColor="#FFFFFF"
+					android:id="@+id/btnTambahSub"
+					android:stateListAnimator="@null"
+					android:layout_marginTop="15dp"/>
+
+			</LinearLayout>
+
+			<LinearLayout
+				android:layout_height="wrap_content"
+				android:layout_width="match_parent"
+				android:padding="8dp"
+				android:orientation="vertical">
+
+				<EditText
+					android:layout_width="match_parent"
+					android:ems="10"
+					android:layout_height="wrap_content"
+					android:layout_marginTop="8dp"
+					android:gravity="top"
+					android:id="@+id/nmrWa"
+					android:hint="Input WA, Exp : 085xxxxxxxxxx"
+					android:textSize="14sp"
+					android:padding="10dp"
+					android:background="@drawable/input"/>
+				<EditText
+					android:layout_width="match_parent"
+					android:ems="10"
+					android:layout_height="wrap_content"
+					android:layout_marginTop="8dp"
+					android:gravity="top"
+					android:id="@+id/norek"
+					android:hint="No.rek Exp : (BRI) xxxxxxx"
+					android:textSize="14sp"
+					android:padding="10dp"
+					android:background="@drawable/input"/>
+				<Button
+					android:layout_width="match_parent"
+					android:layout_height="35dp"
+					android:text="Update WA"
+					android:padding="10dp"
+					android:textSize="10sp"
+					android:background="@drawable/button"
+					android:textColor="#FFFFFF"
+					android:id="@+id/btnTambahNomor"
+					android:stateListAnimator="@null"
+					android:layout_marginTop="15dp"/>
+
+			</LinearLayout>
+
+		</LinearLayout>
+
+	</ScrollView>
+
+</LinearLayout>
+
